@@ -13,10 +13,10 @@ namespace YPMuhiarov.MVVM.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class YPMuhiarovDBEntities : DbContext
+    public partial class YPMuhiarovEntities : DbContext
     {
-        public YPMuhiarovDBEntities()
-            : base("name=YPMuhiarovDBEntities")
+        public YPMuhiarovEntities()
+            : base("name=YPMuhiarovEntities")
         {
         }
     
@@ -38,6 +38,5 @@ namespace YPMuhiarov.MVVM.Model
         public virtual DbSet<LibrarianSchedules> LibrarianSchedules { get; set; }
         public virtual DbSet<ReaderCategories> ReaderCategories { get; set; }
         public virtual DbSet<Readers> Readers { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

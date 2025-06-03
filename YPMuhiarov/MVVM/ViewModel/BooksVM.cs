@@ -15,7 +15,7 @@ namespace YPMuhiarov.MVVM.ViewModel
 {
     public class BooksVM : INotifyPropertyChanged
     {
-        YPMuhiarovDBEntities db = new();
+        YPMuhiarovEntities db = new();
         private BooksModel _selectedBook;
         private Authors _selectedAuthor;
         private string _sortProperty;
@@ -54,7 +54,7 @@ namespace YPMuhiarov.MVVM.ViewModel
         {
             UpdateBooks();
 
-            SaveCommand = new RelayObjCommand(SaveChanges);
+            SaveCommand = new RelayObjCommand(SaveChanges, param => HasChanges());
             AddBookCommand = new RelayObjCommand(AddBook, _ => CanAddBook());
             DeleteBookCommand = new RelayObjCommand(DeleteBook);
             AddAuthorCommand = new RelayCommand(AddAuthor, () => _selectedBook != null && _selectedAuthor != null);

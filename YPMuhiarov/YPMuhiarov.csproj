@@ -113,7 +113,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MVVM\Model\AuthorModel.cs" />
     <Compile Include="MVVM\Model\Authors.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -169,25 +168,15 @@
     <Compile Include="MVVM\Model\Readers.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="MVVM\Model\sysdiagrams.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="MVVM\ViewModel\AuthorsViewModel.cs" />
     <Compile Include="MVVM\ViewModel\RelayCommand.cs" />
     <Compile Include="MVVM\View\Okna\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MVVM\View\Pages\AuthorsPages.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MVVM\ViewModel\BooksVM.cs" />
-    <Compile Include="MVVM\View\Pages\AuthorsPages.xaml.cs">
-      <DependentUpon>AuthorsPages.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -209,6 +198,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
     <None Include="MVVM\Model\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>

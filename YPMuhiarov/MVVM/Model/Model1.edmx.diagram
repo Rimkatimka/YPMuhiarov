@@ -4,34 +4,33 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="985b0829227e46e6bdd99e050dd53300" Name="Diagram1">
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.Authors" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.BookAuthors" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.BookConditions" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.BookLoans" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.BookRestorations" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.Books" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.BookStatuses" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.Branches" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.Genres" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.Librarians" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.LibrarianSchedules" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.ReaderCategories" Width="1.5" PointX="3.75" PointY="21.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.Readers" Width="1.5" PointX="6" PointY="21" IsExpanded="true" />
-        <EntityTypeShape EntityType="YPMuhiarovDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__BookAutho__Autho__5165187F" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__BookAutho__BookI__5070F446" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK_Books_BookConditions" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__BookLoans__BookI__59FA5E80" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__BookLoans__Libra__440B1D61" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__BookLoans__Reade__44FF419A" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__BookResto__BookI__5EBF139D" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__Books__BranchId__4D94879B" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK_Books_BookStatuses" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK_Books_Genres" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__Librarian__Branc__4AB81AF0" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__Librarian__Libra__4BAC3F29" ManuallyRouted="false" />
-        <AssociationConnector Association="YPMuhiarovDBModel.FK__Readers__Categor__4CA06362" ManuallyRouted="false" />
+      <Diagram DiagramId="63ed8f4404ed4fdfb4ca30b3881481a2" Name="Diagram1">
+        <EntityTypeShape EntityType="YPMuhiarovModel.Authors" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.BookAuthors" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.BookConditions" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.BookLoans" Width="1.5" PointX="8.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.BookRestorations" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.Books" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.BookStatuses" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.Branches" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.Genres" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.Librarians" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.LibrarianSchedules" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.ReaderCategories" Width="1.5" PointX="3.75" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="YPMuhiarovModel.Readers" Width="1.5" PointX="6" PointY="21" IsExpanded="true" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__BookAutho__Autho__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__BookAutho__BookI__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK_Books_BookConditions" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__BookLoans__BookI__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__BookLoans__Libra__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__BookLoans__Reade__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__BookResto__BookI__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__Books__BranchId__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK_Books_BookStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK_Books_Genres" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__Librarian__Branc__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__Librarian__Libra__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="YPMuhiarovModel.FK__Readers__Categor__4CA06362" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

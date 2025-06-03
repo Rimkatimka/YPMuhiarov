@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="YPMuhiarov.App" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\View\Okna\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.BooksModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACACACQDgAEAAKkIBgBQAgAAiAAAQAAAAAAAAAAI=</HashCode>
+      <FileName>MVVM\Model\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.YPMuhiarovEntities" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAABCACAgAAIAAkBIkABAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MVVM\Model\Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.Authors" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgABAAAAAABAAAQAAAAAAAQAAAIAAAAAARAAAAAAAEA=</HashCode>
+      <FileName>MVVM\Model\Authors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.BookAuthors" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAgABAAAAAABAAAAAAABA=</HashCode>
+      <FileName>MVVM\Model\BookAuthors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.BookConditions" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\Model\BookConditions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.BookLoans" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAgEAAAgAAAgAAQAAgAAgAAGAAAAAABQAAAAAAA=</HashCode>
+      <FileName>MVVM\Model\BookLoans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.BookRestorations" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACAAEAAAAAAYAAAAAABAggAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>MVVM\Model\BookRestorations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.Books" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAACAAACQBiAGAACEIBgFQIAAAiAAAQAAAAAAAAAAI=</HashCode>
+      <FileName>MVVM\Model\Books.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.BookStatuses" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\Model\BookStatuses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.Branches" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAgAAABQAQAgAAAAAACAAAAIBAAAAA=</HashCode>
+      <FileName>MVVM\Model\Branches.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.Genres" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAgAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>MVVM\Model\Genres.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.Librarians" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAAgAACAAACAgAAABAABAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>MVVM\Model\Librarians.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.LibrarianSchedules" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAgAAAAAAABgAAAAAAAAIAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\Model\LibrarianSchedules.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.ReaderCategories" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAgQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\Model\ReaderCategories.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.Model.Readers" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAqAAAAAAAAAAAQACAAACAAAAJAAAAAA=</HashCode>
+      <FileName>MVVM\Model\Readers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.ViewModel.AuthorsViewModel" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\ViewModel\AuthorsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.ViewModel.BooksVM" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gJAAAAAAABAQAEAgYiCiAgAAoAIoAgCAABAIAQQFAQA=</HashCode>
+      <FileName>MVVM\ViewModel\BooksVM.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.ViewModel.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\ViewModel\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.ViewModel.RelayObjCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\ViewModel\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YPMuhiarov.MVVM.ViewModel.RelayCommand&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVM\ViewModel\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="YPMuhiarov.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="YPMuhiarov.Properties.Settings" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="10.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
