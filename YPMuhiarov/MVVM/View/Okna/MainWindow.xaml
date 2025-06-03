@@ -15,92 +15,106 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         
-        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="5">
-            <TextBlock Text="Сортировать по:" VerticalAlignment="Center" Margin="0,0,5,0"/>
-            <ComboBox SelectedItem="{Binding SortProperty, UpdateSourceTrigger=PropertyChanged}" 
-                  Width="150" Margin="0,0,10,0">
-                <ComboBoxItem Content="Название" Tag="Title"/>
-                <ComboBoxItem Content="Жанр" Tag="Genres.Name"/>
-                <ComboBoxItem Content="Год выпуска" Tag="PublicationYear"/>
-                <ComboBoxItem Content="Состояние" Tag="BookConditions.Name"/>
-                <ComboBoxItem Content="Статус" Tag="BookStatuses.Name"/>
-                <ComboBoxItem Content="Износ" Tag="WearPercentage"/>
-            </ComboBox>
-            <RadioButton Content="От А до Я" 
-                     IsChecked="{Binding IsSortAscending, UpdateSourceTrigger=PropertyChanged}" 
-                     GroupName="SortDirection" Margin="0,0,5,0"/>
-            <RadioButton Content="От Я до А" 
-                     IsChecked="{Binding IsSortDescending, UpdateSourceTrigger=PropertyChanged}" 
-                     GroupName="SortDirection"/>
-        </StackPanel>
+        
         <Image Source="/Images/logo.jpg" HorizontalAlignment="Right"/>
 
 
-        <TabControl Grid.Row="1" >
-            <ListView  HorizontalContentAlignment="Stretch" ItemsSource="{Binding ListBooks}" SelectedItem="{Binding SelectedBook}" Margin="5" Background="#8C9EAD" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Border Margin="5" BorderThickness="3" BorderBrush="Black">
-                            <StackPanel Margin="5">
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Title}"/>
+        <TabControl Grid.Row="1">
+            <TabItem Header="Книги" Width="100">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="Сортировать по:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <ComboBox SelectedItem="{Binding SortProperty, UpdateSourceTrigger=PropertyChanged}" 
+          Width="150" Margin="0,0,10,0">
+                            <ComboBoxItem Content="Название" Tag="Title"/>
+                            <ComboBoxItem Content="Жанр" Tag="Genres.Name"/>
+                            <ComboBoxItem Content="Год выпуска" Tag="PublicationYear"/>
+                            <ComboBoxItem Content="Состояние" Tag="BookConditions.Name"/>
+                            <ComboBoxItem Content="Статус" Tag="BookStatuses.Name"/>
+                            <ComboBoxItem Content="Износ" Tag="WearPercentage"/>
+                        </ComboBox>
+                        <RadioButton Content="От А до Я" 
+             IsChecked="{Binding IsSortAscending, UpdateSourceTrigger=PropertyChanged}" 
+             GroupName="SortDirection" Margin="0,0,5,0"/>
+                        <RadioButton Content="От Я до А" 
+             IsChecked="{Binding IsSortDescending, UpdateSourceTrigger=PropertyChanged}" 
+             GroupName="SortDirection"/>
+                    </StackPanel>
+                    
+                    <ListView Grid.Row="1" HorizontalContentAlignment="Stretch" ItemsSource="{Binding ListBooks}" SelectedItem="{Binding SelectedBook}" Margin="5" Background="#8C9EAD" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border Margin="5" BorderThickness="3" BorderBrush="Black">
+                                    <StackPanel Margin="5">
+                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Title}"/>
 
-                                <ListView HorizontalContentAlignment="Stretch" ItemsSource="{Binding BookAuthors}" Background="#8C9EAD">
-                                    <ListView.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackPanel>
-                                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Authors.FIO}"/>
-                                            </StackPanel>
-                                        </DataTemplate>
-                                    </ListView.ItemTemplate>
-                                </ListView>
+                                        <ListView HorizontalContentAlignment="Stretch" ItemsSource="{Binding BookAuthors}" Background="#8C9EAD">
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel>
+                                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Authors.FIO}"/>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
 
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding GenreName}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding PublicationYear}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding ConditionName}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding StatusName}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding WearPercentage}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding ReplacementRequired}"/>
-                            </StackPanel>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding GenreName}"/>
+                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding PublicationYear}"/>
+                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding ConditionName}"/>
+                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding StatusName}"/>
+                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding WearPercentage}"/>
+                                        <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding ReplacementRequired}"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
 
-            <ListView  HorizontalContentAlignment="Stretch" DataContext="{Binding Authors}" ItemsSource="{Binding ListBooks}" SelectedItem="{Binding SelectedBook}" Margin="5" Background="#8C9EAD" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Border Margin="5" BorderThickness="3" BorderBrush="Black">
-                            <StackPanel Margin="5">
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding FIO}"/>
+                    <Button Command="{Binding AddBookCommand}" Grid.Row="4" Content="Добавить"/>
+                    <Button Command="{Binding DeleteBookCommand}" Grid.Row="4" Grid.Column="1" Content="Удалить"/>
+                </Grid>
+                
+            </TabItem>
+            <TabItem Header="Авторы" Width="100">
+                <ListView  HorizontalContentAlignment="Stretch"  ItemsSource="{Binding ListAuthors}" Margin="5" Background="#8C9EAD" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="5" BorderThickness="3" BorderBrush="Black">
+                                <StackPanel Margin="5">
+                                    <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding FIO}"/>
 
-                                <ListView HorizontalContentAlignment="Stretch" ItemsSource="{Binding BookAuthors}" Background="#8C9EAD">
-                                    <ListView.ItemTemplate>
-                                        <DataTemplate>
-                                            <StackPanel>
-                                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Authors.FIO}"/>
-                                            </StackPanel>
-                                        </DataTemplate>
-                                    </ListView.ItemTemplate>
-                                </ListView>
-
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding BirthDate}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding DeathDate}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Country}"/>
-                                <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding MainGenres}"/>
-                            </StackPanel>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                                    <ListView HorizontalContentAlignment="Stretch" ItemsSource="{Binding BookAuthors}" Background="#8C9EAD">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Books.Title}"/>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                    <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding BirthDate}"/>
+                                    <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding DeathDate}"/>
+                                    <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding Country}"/>
+                                    <TextBlock Style="{StaticResource NormTBlock}" Text="{Binding MainGenres}"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </TabItem>
         </TabControl>
         
             
 
         <StackPanel Grid.Column="1" Grid.Row="1" DataContext="{Binding SelectedBook}">
-            <TextBlock Style="{StaticResource NormTBlock}" Text="Выбранный элемент" Margin="5"/>
+            <TextBlock Style="{StaticResource NormTBlock}" Text="Выбранная книга" Margin="5"/>
             <StackPanel Margin="7">
                 <TextBlock Style="{StaticResource NormTBlock}" Text="Название"/>
                 <TextBox Text="{Binding Title,UpdateSourceTrigger=PropertyChanged}" MaxLength="25"/>
@@ -147,7 +161,5 @@
                 <Button Command="{Binding SaveCommand}" Content="Сохранить"/>
             </StackPanel>
         </StackPanel>
-        <Button Command="{Binding AddBookCommand}" Grid.Row="4" Content="Добавить"/>
-        <Button Command="{Binding DeleteBookCommand}" Grid.Row="4" Grid.Column="1" Content="Удалить"/>
     </Grid>
 </Window>
