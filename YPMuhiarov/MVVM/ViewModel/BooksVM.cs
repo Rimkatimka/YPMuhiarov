@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Input;
 using YPMuhiarov.MVVM.Model;
 using YPMuhiarov.MVVM.ViewModel;
+using Xunit;
 
 namespace YPMuhiarov.MVVM.ViewModel
 {
@@ -61,6 +62,7 @@ namespace YPMuhiarov.MVVM.ViewModel
             RemoveAuthorCommand = new RelayCommand<BookAuthors>(RemoveAuthor, ba => _selectedBook != null && ba != null);
         }
 
+        
         public void UpdateBooks()
         {
             ListBooks.Clear();
@@ -128,6 +130,7 @@ namespace YPMuhiarov.MVVM.ViewModel
                    _selectedBook.WearPercentage >= 0 && _selectedBook.WearPercentage <= 100;
         }
 
+        [Fact]
         private void AddBook(object parameter)
         {
             try
@@ -175,6 +178,7 @@ namespace YPMuhiarov.MVVM.ViewModel
             }
         }
 
+        [Fact]
         private void DeleteBook(object parameter)
         {
             if (SelectedBook == null) return;
@@ -201,6 +205,7 @@ namespace YPMuhiarov.MVVM.ViewModel
             }
         }
 
+        [Fact]
         private void AddAuthor()
         {
             try

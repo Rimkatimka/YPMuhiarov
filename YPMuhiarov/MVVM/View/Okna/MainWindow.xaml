@@ -20,7 +20,7 @@
         <Image Source="/Images/logo.jpg" HorizontalAlignment="Right"/>
         
         <TabControl Grid.Row="1">
-            <TabItem Header="Книги" Width="100">
+            <TabItem Header="Учет книг" Width="100">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
@@ -81,7 +81,7 @@
                 </Grid>
                 
             </TabItem>
-            <TabItem Header="Авторы" Width="100">
+            <TabItem Header="Список авторов" Width="100">
                 <ListView  HorizontalContentAlignment="Stretch"  ItemsSource="{Binding ListAuthors}" Margin="5" Background="#8C9EAD" >
                     <ListView.ItemTemplate>
                         <DataTemplate>

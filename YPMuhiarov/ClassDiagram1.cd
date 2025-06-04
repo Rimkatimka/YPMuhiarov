@@ -24,7 +24,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="YPMuhiarov.MVVM.Model.YPMuhiarovEntities" Collapsed="true">
-    <Position X="5.75" Y="4.5" Width="1.5" />
+    <Position X="6" Y="4.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAABCACAgAAIAAkBIkABAAAAAAAAABAAAAAA=</HashCode>
       <FileName>MVVM\Model\Model1.Context.cs</FileName>
@@ -38,14 +38,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="YPMuhiarov.MVVM.Model.BookAuthors" Collapsed="true">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAAAAAAgABAAAAAABAAAAAAABA=</HashCode>
       <FileName>MVVM\Model\BookAuthors.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="YPMuhiarov.MVVM.Model.BookConditions" Collapsed="true">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MVVM\Model\BookConditions.cs</FileName>
@@ -101,7 +101,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="YPMuhiarov.MVVM.Model.LibrarianSchedules" Collapsed="true">
-    <Position X="7.5" Y="2.5" Width="1.5" />
+    <Position X="7.5" Y="2.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAEAAgAAAAAAABgAAAAAAAAIAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MVVM\Model\LibrarianSchedules.cs</FileName>
@@ -122,7 +122,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="YPMuhiarov.MVVM.ViewModel.AuthorsViewModel" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="4" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MVVM\ViewModel\AuthorsViewModel.cs</FileName>
@@ -145,7 +145,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="YPMuhiarov.MVVM.ViewModel.RelayObjCommand" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+    <Position X="0.5" Y="4.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MVVM\ViewModel\RelayCommand.cs</FileName>
@@ -153,7 +153,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="YPMuhiarov.MVVM.ViewModel.RelayCommand&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7.5" Y="3.5" Width="1.5" />
+    <Position X="7.5" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MVVM\ViewModel\RelayCommand.cs</FileName>
@@ -161,13 +161,13 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="YPMuhiarov.Properties.Resources" Collapsed="true">
-    <Position X="2.25" Y="4.5" Width="1.5" />
+    <Position X="2.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="YPMuhiarov.Properties.Settings" Collapsed="true">
-    <Position X="4" Y="4.5" Width="1.5" />
+    <Position X="4.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
